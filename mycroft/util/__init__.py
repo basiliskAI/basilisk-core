@@ -47,7 +47,7 @@ def resolve_resource_file(res_name):
     or 'path/filename.ext'
 
     The system wil look for ~/.mycroft/res_name first, and
-    if not found will look at /opt/mycroft/res_name,
+    if not found will look at /opt/basilisk/res_name,
     then finally it will look for res_name in the 'mycroft/res'
     folder of the source code package.
 
@@ -55,7 +55,7 @@ def resolve_resource_file(res_name):
     With mycroft running as the user 'bob', if you called
         resolve_resource_file('snd/beep.wav')
     it would return either '/home/bob/.mycroft/snd/beep.wav' or
-    '/opt/mycroft/snd/beep.wav' or '.../mycroft/res/snd/beep.wav',
+    '/opt/basilisk/snd/beep.wav' or '.../mycroft/res/snd/beep.wav',
     where the '...' is replaced by the path where the package has
     been installed.
 
@@ -73,7 +73,7 @@ def resolve_resource_file(res_name):
     if os.path.isfile(filename):
         return filename
 
-    # Next look for /opt/mycroft/res/res_name
+    # Next look for /opt/basilisk/res/res_name
     data_dir = expanduser(config['data_dir'])
     filename = os.path.expanduser(join(data_dir, res_name))
     if os.path.isfile(filename):

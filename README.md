@@ -65,7 +65,7 @@ Once paired, your unit will use Mycroft API keys for services such as Speech-to-
 
 ## Skills
 
-Mycroft is nothing without skills.  There are a handful of default skills that are downloaded automatically to your `/opt/mycroft/skills` directory, but most need to be installed explicitly.  See the [Skill Repo](https://github.com/MycroftAI/mycroft-skills#welcome) to discover skills made by others.  And please share your own interesting work!
+Mycroft is nothing without skills.  There are a handful of default skills that are downloaded automatically to your `/opt/basilisk/skills` directory, but most need to be installed explicitly.  See the [Skill Repo](https://github.com/MycroftAI/mycroft-skills#welcome) to discover skills made by others.  And please share your own interesting work!
 
 # Behind the scenes
 

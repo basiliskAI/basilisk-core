@@ -94,7 +94,7 @@ function checkfiles() {
 ${MYCROFT_HOME}
 ${MYCROFT_HOME}/scripts/logs
 /tmp/mycroft/
-/opt/mycroft/skills
+/opt/basilisk/skills
 EOF
 
     if [[ ${RUN_AS_ROOT} -eq 1 ]] ; then
@@ -220,8 +220,8 @@ RUNDIR=$( readlink -f "${0}" | tr -s '\057' '\012' | sed \$d | tr -s '\012' '\05
 if [[ -f "${RUNDIR}/mycroft-service.screen" && -f "${RUNDIR}/../mycroft/__init__.py" ]] ; then
     MYCROFT_HOME=$(cd "${RUNDIR}" && cd .. && pwd )
 else
-    if [[ -f "/opt/mycroft/mycroft/__init__.py" ]] ; then
-        MYCROFT_HOME="/opt/mycroft/"
+    if [[ -f "/opt/basilisk/mycroft/__init__.py" ]] ; then
+        MYCROFT_HOME="/opt/basilisk/"
     else
         mlog " = Error: Having some difficulty in guessing the home Mycroft directory?"
         exit 200

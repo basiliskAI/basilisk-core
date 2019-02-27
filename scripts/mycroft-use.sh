@@ -91,7 +91,7 @@ function restore_init_scripts() {
     sudo chown -Rvf mycroft:mycroft /var/log/mycroft*
     sudo chown -Rvf mycroft:mycroft /tmp/mycroft
     sudo chown -Rvf mycroft:mycroft /var/run/mycroft*
-    sudo chown -Rvf mycroft:mycroft /opt/mycroft
+    sudo chown -Rvf mycroft:mycroft /opt/basilisk
     sudo chown mycroft:mycroft /var/tmp/mycroft_web_cache.json
 
     # reload daemon scripts

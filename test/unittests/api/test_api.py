@@ -25,7 +25,7 @@ from test.util import base_config
 CONFIG = base_config()
 CONFIG.merge(
     {
-        'data_dir': '/opt/mycroft',
+        'data_dir': '/opt/basilisk',
         'server': {
             'url': 'https://api-test.mycroft.ai',
             'version': 'v1',

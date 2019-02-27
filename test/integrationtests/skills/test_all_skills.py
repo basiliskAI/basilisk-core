@@ -27,7 +27,7 @@ import os
 from test.integrationtests.skills.skill_tester import MockSkillsLoader
 from test.integrationtests.skills.skill_tester import SkillTest
 
-SKILL_PATH = '/opt/mycroft/skills'
+SKILL_PATH = '/opt/basilisk/skills'
 
 
 def all_tests():
